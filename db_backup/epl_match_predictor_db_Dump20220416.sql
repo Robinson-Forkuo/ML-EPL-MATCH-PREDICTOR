@@ -143,7 +143,7 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `ix_user_email` (`email`),
   UNIQUE KEY `ix_user_username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +152,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'konama','konama@outlook.com','pbkdf2:sha256:260000$IY9SVzMNJFSsIHpC$a249f865c10d05431036a939f4b7bb2db169376d36d25f54b892e2ac524f9b9b',0),(2,'robinson','robinson@gmail.com','pbkdf2:sha256:260000$hDaZ13ZS3Uxw745V$67f1b6f69505385cc9ad5c776ac174b9cb8a5b2e929f16799cf900f7d0ae551e',1),(3,'tiffany','tifanny@gmail.com','pbkdf2:sha256:260000$Jf6g01NsgCZE1gPc$b7d088b36f2430c0ef7142d8aa3745258039cf204e8654ab2ecc3af16a45be5e',0),(12,'forkuo','forkuo@gmail.com','pbkdf2:sha256:260000$dvMQooBLSv14Hvyc$b989dd355192b34f004ea3d6a5c964e3cce67ff77fdd36ca5c9c30d21af87e1e',1),(15,'david','david@gmail.com','pbkdf2:sha256:260000$2sWoBiXVzZXgTX5d$e9393a593609c6197a000ae54965c36c6653c69b96c64962ed647fa520a21cf5',0),(17,'project','project@gmail.com','pbkdf2:sha256:260000$pNmtE67ngv8xAhRz$bc164c56d4d1bca748b31de3710334b0f20f126ea1cbbff720269bf7b99fdb57',0),(22,'tiffanny','tiffanny@gmail.com','pbkdf2:sha256:260000$EoSCHlYit2gPlY0S$f8724ed233e69b9efcf8d15cd865d8da926609225145d9f3312df3cb9230660a',1);
+INSERT INTO `user` VALUES (1,'konama','konama@outlook.com','pbkdf2:sha256:260000$IY9SVzMNJFSsIHpC$a249f865c10d05431036a939f4b7bb2db169376d36d25f54b892e2ac524f9b9b',0),(2,'robinson','robinson@gmail.com','pbkdf2:sha256:260000$hDaZ13ZS3Uxw745V$67f1b6f69505385cc9ad5c776ac174b9cb8a5b2e929f16799cf900f7d0ae551e',1),(3,'tiffany','tifanny@gmail.com','pbkdf2:sha256:260000$Jf6g01NsgCZE1gPc$b7d088b36f2430c0ef7142d8aa3745258039cf204e8654ab2ecc3af16a45be5e',0),(12,'forkuo','forkuo@gmail.com','pbkdf2:sha256:260000$dvMQooBLSv14Hvyc$b989dd355192b34f004ea3d6a5c964e3cce67ff77fdd36ca5c9c30d21af87e1e',1),(15,'david','david@gmail.com','pbkdf2:sha256:260000$2sWoBiXVzZXgTX5d$e9393a593609c6197a000ae54965c36c6653c69b96c64962ed647fa520a21cf5',0),(17,'project','project@gmail.com','pbkdf2:sha256:260000$pNmtE67ngv8xAhRz$bc164c56d4d1bca748b31de3710334b0f20f126ea1cbbff720269bf7b99fdb57',0),(22,'tiffanny','tiffanny@gmail.com','pbkdf2:sha256:260000$EoSCHlYit2gPlY0S$f8724ed233e69b9efcf8d15cd865d8da926609225145d9f3312df3cb9230660a',1),(25,'standard','Standard@gmail.com','pbkdf2:sha256:260000$ew3LkD1onK38uqOk$593f531320798c7846922c584ae2d6477c1387af7bc6137373f0e2c1796634e8',0),(26,'admin','admin@gmail.com','pbkdf2:sha256:260000$ngLdoUo0UhGXKGGf$b5806839de01d236903278d114bfc38e77e635a4f5959b6fd53b74c5a36ae0a2',1);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -173,10 +173,6 @@ SET @saved_cs_client     = @@character_set_client;
  1 AS `username`,
  1 AS `user_id`*/;
 SET character_set_client = @saved_cs_client;
-
---
--- Dumping events for database 'epl_predictor'
---
 
 --
 -- Final view structure for view `v_all_predictions`
@@ -205,4 +201,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-16 12:25:44
+-- Dump completed on 2022-04-16 12:49:12
